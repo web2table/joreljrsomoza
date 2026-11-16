@@ -28,7 +28,7 @@ h1 span{color:var(--red)}
 .portrait-panel img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center top}
 .portrait-caption{position:absolute;z-index:1;left:28px;right:24px;bottom:25px;display:flex;flex-direction:column;gap:5px}
 .portrait-caption span:first-child{font-size:12px;font-weight:800;letter-spacing:1.3px}
-.portrait-caption span:last-child{font-size:10px;color:#ccc;letter-spacing:1.2px}
+.portrait-caption span:last-child{font-size:11px;color:var(--red);font-weight:800;letter-spacing:1.2px}
 @media(max-width:700px){
 body{padding:14px;place-items:center}
 .business-card{width:min(470px,100%);min-height:0;grid-template-columns:1fr;border-radius:18px}
