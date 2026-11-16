@@ -80,3 +80,9 @@ body{padding:8px}
 .contact-details{grid-template-columns:1fr;gap:10px}
 .contact-item strong{font-size:10px}
 }
+
+
+.contact-icon svg{display:block;width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.contact-icon.brand-icon svg{width:17px;height:17px;fill:currentColor;stroke:none}
+.contact-icon.facebook-icon svg{width:15px;height:15px}
+.contact-icon.instagram-icon svg{width:16px;height:16px}
