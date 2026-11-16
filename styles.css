@@ -174,3 +174,12 @@ body{padding:8px}
 @media(max-width:700px) and (orientation:landscape){
   body{padding-top:6px;padding-bottom:6px}
 }
+
+
+/* Discreet save-card icon */
+.business-card{position:relative}
+.card-download{position:absolute;z-index:5;top:16px;right:16px;width:40px;height:40px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.2);border-radius:12px;background:rgba(15,15,15,.82);color:#f7f7f7;cursor:pointer;backdrop-filter:blur(8px);transition:background .2s,border-color .2s,transform .2s}
+.card-download:hover{background:var(--red);border-color:var(--red);transform:translateY(-1px)}
+.card-download:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.card-download svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:700px){.card-download{top:9px;right:9px;width:32px;height:32px;border-radius:9px}.card-download svg{width:16px;height:16px}}

@@ -11,9 +11,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
+<script defer src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script defer src="./card-download.js"></script>
 </head>
 <body>
 <main class="business-card">
+  <button class="card-download" type="button" aria-label="Save business card image" title="Save business card image" data-html2canvas-ignore="true">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4"/><path d="M5 16v4h14v-4"/></svg>
+  </button>
   <section class="card-content" aria-label="Web2Table business profile">
     <div class="brand-row">
       <img class="business-logo" src="./web2table.png" alt="Web2Table logo">
