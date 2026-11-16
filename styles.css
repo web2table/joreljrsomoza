@@ -133,3 +133,44 @@ body{padding:8px}
   .business-description{font-size:7px}
   .contact-item strong{font-size:6.5px}
 }
+
+
+
+/* Mobile: preserve the desktop landscape card; allow horizontal panning instead of stacking or squeezing */
+@media(max-width:700px){
+  html,body{min-height:100%;width:100%}
+  body{display:block;min-height:100svh;padding:10px 0;overflow-x:auto;overflow-y:auto}
+  .business-card{width:700px;max-width:none;min-height:405px;height:405px;margin:0 auto;grid-template-columns:1.12fr .88fr;border-radius:16px}
+  .card-content{padding:24px 30px;order:initial;justify-content:center}
+  .portrait-panel{height:405px;min-height:405px;order:initial}
+  .portrait-panel img{object-fit:cover;object-position:center top}
+  .portrait-panel:after{background:none}
+  .portrait-caption{left:24px;right:20px;bottom:22px;gap:5px}
+  .portrait-caption span:first-child{font-size:14px;letter-spacing:1.2px}
+  .portrait-caption span:last-child{font-size:10px;letter-spacing:1px}
+  .brand-row{gap:12px;margin-bottom:24px}
+  .business-logo{width:100px;height:42px}
+  .business-label{font-size:8px;letter-spacing:1.4px}
+  .business-heading .eyebrow{font-size:9px;letter-spacing:1.5px;margin-bottom:6px}
+  h1{font-size:48px;letter-spacing:-2.5px}
+  .business-type{font-size:13px;margin-top:8px}
+  .business-description{font-size:10px;line-height:1.65;margin:14px 0 16px}
+  .founders{padding-top:12px}
+  .section-label{font-size:8px;margin-bottom:9px;letter-spacing:1.2px}
+  .founder-row{grid-template-columns:1fr 1fr;gap:12px}
+  .founder{gap:4px}
+  .founder strong{font-size:10px}
+  .founder span{font-size:9px}
+  .contact-details{grid-template-columns:1fr 1fr;gap:10px 12px;margin-top:14px}
+  .contact-item{gap:7px}
+  .contact-icon{width:24px;height:24px;flex-basis:24px;border-radius:7px}
+  .contact-icon svg,.contact-icon.brand-icon svg{width:13px;height:13px}
+  .contact-item small{font-size:7px;letter-spacing:1px}
+  .contact-item strong{font-size:8px;line-height:1.3}
+  .card-footer{margin-top:14px;padding-top:12px;gap:8px}
+  .website-link{font-size:10px}
+  .footer-note{font-size:8px}
+}
+@media(max-width:700px) and (orientation:landscape){
+  body{padding-top:6px;padding-bottom:6px}
+}
