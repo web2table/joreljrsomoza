@@ -183,3 +183,8 @@ body{padding:8px}
 .card-download:focus-visible{outline:2px solid #fff;outline-offset:3px}
 .card-download svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 @media(max-width:700px){.card-download{top:9px;right:9px;width:32px;height:32px;border-radius:9px}.card-download svg{width:16px;height:16px}}
+
+
+/* Remove the browser's blue tap highlight while preserving keyboard focus visibility */
+a, button, [role="button"]{-webkit-tap-highlight-color:transparent}
+.card-download:focus:not(:focus-visible){outline:none}
