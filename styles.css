@@ -174,13 +174,3 @@ body{padding:8px}
 @media(max-width:700px) and (orientation:landscape){
   body{padding-top:6px;padding-bottom:6px}
 }
-
-/* Save both existing card artwork images in one mobile-friendly download */
-.save-cards{margin-top:18px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
-.save-cards-button{appearance:none;border:0;border-radius:10px;background:var(--red);color:#fff;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:0 18px;font:800 12px/1 Manrope,Arial,sans-serif;letter-spacing:.2px;cursor:pointer;transition:opacity .18s ease,transform .18s ease}
-.save-cards-button:hover{opacity:.9;transform:translateY(-1px)}
-.save-cards-button:focus-visible{outline:2px solid #fff;outline-offset:3px}
-.save-cards-button:disabled{opacity:.65;cursor:wait;transform:none}
-.save-cards-button svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.save-cards-status{margin:0;color:#888;font-size:10px;line-height:1.5}
-@media(max-width:700px){.save-cards{margin-top:12px;gap:6px}.save-cards-button{min-height:38px;padding:0 12px;font-size:10px}.save-cards-status{font-size:8px}}
