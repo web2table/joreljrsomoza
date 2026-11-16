@@ -188,3 +188,12 @@ body{padding:8px}
 /* Remove the browser's blue tap highlight while preserving keyboard focus visibility */
 a, button, [role="button"]{-webkit-tap-highlight-color:transparent}
 .card-download:focus:not(:focus-visible){outline:none}
+
+ 
+/* Mobile touch feedback: suppress the browser's default blue tap/focus rectangle */
+html,body,*{-webkit-tap-highlight-color:rgba(0,0,0,0)!important}
+a:focus,a:active,button:focus,button:active,
+a:focus-visible,button:focus-visible{
+  outline:none!important;
+  box-shadow:none!important;
+}
