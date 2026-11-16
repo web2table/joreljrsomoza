@@ -86,3 +86,9 @@ body{padding:8px}
 .contact-icon.brand-icon svg{width:17px;height:17px;fill:currentColor;stroke:none}
 .contact-icon.facebook-icon svg{width:15px;height:15px}
 .contact-icon.instagram-icon svg{width:16px;height:16px}
+
+/* Match Angelica's founder caption size and placement */
+.portrait-caption{left:clamp(24px,4vw,48px);bottom:clamp(28px,5vh,54px)}
+.portrait-caption span:first-child{font-size:clamp(14px,1.8vw,20px);letter-spacing:1.7px}
+.portrait-caption span:last-child{font-size:11px;font-weight:800;color:var(--red)}
+@media(max-width:700px){.portrait-caption{left:24px;bottom:22px}}
