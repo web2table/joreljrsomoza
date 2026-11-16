@@ -1,6 +1,6 @@
 (() => {
   const card = document.querySelector('.business-card');
-  if (!card) return;
+  if (!card || document.querySelector('.saveable-card-wrap')) return;
 
   const waitForImages = async () => {
     const images = Array.from(card.querySelectorAll('img'));
@@ -36,16 +36,21 @@
 
       const wrapper = document.createElement('section');
       wrapper.className = 'saveable-card-wrap';
-      wrapper.setAttribute('aria-label', 'Saveable digital business card image');
+      wrapper.setAttribute('aria-label', 'Digital business card image');
       const hint = document.createElement('p');
       hint.className = 'saveable-card-hint';
       hint.textContent = 'Press and hold the business card image to save it to your Photos or Gallery.';
       wrapper.append(hint, image);
-      card.parentNode.insertBefore(wrapper, card);
+
+      card.replaceWith(wrapper);
     } catch (error) {
       console.error('Could not create the saveable business card image:', error);
     }
   };
 
-  window.addEventListener('load', createSaveableCard, { once: true });
+  if (document.readyState === 'complete') {
+    createSaveableCard();
+  } else {
+    window.addEventListener('load', createSaveableCard, { once: true });
+  }
 })();
