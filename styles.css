@@ -92,3 +92,44 @@ body{padding:8px}
 .portrait-caption span:first-child{font-size:clamp(14px,1.8vw,20px);letter-spacing:1.7px}
 .portrait-caption span:last-child{font-size:11px;font-weight:800;color:var(--red)}
 @media(max-width:700px){.portrait-caption{left:24px;bottom:22px}}
+
+
+/* Keep the desktop two-column card layout on phones */
+@media(max-width:700px){
+  body{padding:8px;place-items:center;overflow-x:hidden}
+  .business-card{width:100%;min-height:min(650px,calc(100svh - 16px));grid-template-columns:1.12fr .88fr;border-radius:14px}
+  .card-content{padding:14px 10px;order:initial;justify-content:center}
+  .portrait-panel{height:auto;min-height:100%;order:initial}
+  .portrait-panel img{object-position:center top}
+  .portrait-caption{left:10px;right:8px;bottom:16px;gap:3px}
+  .portrait-caption span:first-child{font-size:clamp(8px,2.2vw,11px);letter-spacing:.7px}
+  .portrait-caption span:last-child{font-size:clamp(6px,1.7vw,8px);letter-spacing:.7px}
+  .brand-row{gap:6px;margin-bottom:18px}
+  .business-logo{width:68px;height:32px}
+  .business-label{font-size:6px;letter-spacing:1px}
+  .business-heading .eyebrow{font-size:7px;letter-spacing:1px;margin-bottom:5px}
+  h1{font-size:clamp(24px,7vw,38px);letter-spacing:-1.5px}
+  .business-type{font-size:9px;margin-top:7px}
+  .business-description{font-size:8px;line-height:1.55;margin:12px 0 14px}
+  .founders{padding-top:10px}
+  .section-label{font-size:7px;margin-bottom:8px;letter-spacing:1px}
+  .founder-row{grid-template-columns:1fr;gap:7px}
+  .founder{gap:3px}
+  .founder strong{font-size:8px}
+  .founder span{font-size:7px}
+  .contact-details{grid-template-columns:1fr;gap:8px;margin-top:12px}
+  .contact-item{gap:6px}
+  .contact-icon{width:19px;height:19px;flex-basis:19px;border-radius:6px}
+  .contact-icon svg,.contact-icon.brand-icon svg{width:11px;height:11px}
+  .contact-item small{font-size:6px;letter-spacing:.8px}
+  .contact-item strong{font-size:7px;line-height:1.25}
+  .card-footer{margin-top:12px;padding-top:10px;gap:5px}
+  .website-link{font-size:8px}
+  .footer-note{font-size:6px}
+}
+@media(max-width:380px){
+  .business-card{min-height:min(650px,calc(100svh - 16px))}
+  .card-content{padding:11px 8px}
+  .business-description{font-size:7px}
+  .contact-item strong{font-size:6.5px}
+}
